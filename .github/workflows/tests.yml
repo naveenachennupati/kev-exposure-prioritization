@@ -1,0 +1,32 @@
+name: Regression tests and reproducible outcome evidence
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run standard library regression tests
+        run: python -m unittest discover -s tests -v
+      - name: Rebuild provenance-labeled example reports
+        run: |
+          python -m src.operational_study
+          python -m src.pipeline --kev-file data/official_kev_selected_2026-11-13.json --out reports --as-of 2026-11-16
+      - name: Produce evidence checksums
+        run: sha256sum reports/*.json > reports/SHA256SUMS.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: reproducible-evidence
+          path: |
+            reports/operational-study.json
+            reports/operational-study.html
+            reports/results.json
+            reports/SHA256SUMS.txt
+          retention-days: 30

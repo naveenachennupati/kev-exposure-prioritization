@@ -1,0 +1,37 @@
+name: Refresh public CISA KEV intelligence (actual online feed)
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 12 * * 1'
+permissions:
+  contents: read
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download authoritative current catalog and build public watchlist
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m src.pipeline --fetch-kev --as-of "$(date -u +%F)" --out reports/live-kev
+          python - <<'PYCODE'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('reports/live-kev/results.json').read_text())
+          if d.get('mode') != 'public_kev_watchlist':
+              raise SystemExit('Expected public intelligence watchlist only')
+          if d.get('cve_records_in_source',0)<100 or d.get('kev_source_scope') != 'supplied_catalog_not_marked_as_excerpt':
+              raise SystemExit('Incomplete catalog: refusing to publish as full feed')
+          print('Public KEV source entries:',d['cve_records_in_source'])
+          PYCODE
+          sha256sum reports/live-kev/results.json reports/live-kev/queue.csv > reports/live-kev/SHA256SUMS.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: public-kev-refresh-evidence
+          path: reports/live-kev/
+          retention-days: 30

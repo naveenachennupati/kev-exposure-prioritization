@@ -1,0 +1,8 @@
+priority,cve,asset,known_exploited,epss,cvss,vendor,product,due_date,exposure,criticality,source_url
+P1,CVE-2026-111560,,True,,,Barracuda Networks,Multiple Products,2026-11-13,Unknown,Unknown,https://nvd.nist.gov/vuln/detail/CVE-2026-111560
+P1,CVE-2026-111793,,True,,,Openwave Messaging Limited,Webtop Media Transcoder,2026-11-24,Unknown,Unknown,https://nvd.nist.gov/vuln/detail/CVE-2026-111793
+P1,CVE-2026-114713,,True,,,UnrealIRCd,UnrealIRCd,2026-11-16,Unknown,Unknown,https://nvd.nist.gov/vuln/detail/CVE-2026-114713
+P1,CVE-2026-116606,,True,,,Barracuda Networks,Barracuda Email Security Gateway (ESG),2026-11-13,Unknown,Unknown,https://nvd.nist.gov/vuln/detail/CVE-2026-116606
+P1,CVE-2026-123039,,True,,,Check Point,Multiple Products,2026-11-16,Unknown,Unknown,https://nvd.nist.gov/vuln/detail/CVE-2026-123039
+P1,CVE-2026-124194,,True,,,Microsoft,Office,2026-11-24,Unknown,Unknown,https://nvd.nist.gov/vuln/detail/CVE-2026-124194
+P1,CVE-2026-20320,,True,,,Cisco,BroadWorks,2026-11-24,Unknown,Unknown,https://nvd.nist.gov/vuln/detail/CVE-2026-20320

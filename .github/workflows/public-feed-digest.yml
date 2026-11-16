@@ -1,0 +1,22 @@
+name: Verify live public KEV availability
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "10 15 * * 1-5"
+permissions:
+  contents: read
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate public intelligence digest (never scan private assets)
+        run: python -m src.pipeline --fetch-kev --out public-feed-output
+      - uses: actions/upload-artifact@v4
+        with:
+          name: public-kev-intelligence-brief
+          path: public-feed-output/
+          retention-days: 7

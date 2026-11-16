@@ -1,0 +1,4 @@
+priority,cve,asset,known_exploited,epss,cvss,vendor,product,due_date,exposure,criticality,source_url
+P0,CVE-2026-114713,example-web-01.example.test,True,,9.0,UnrealIRCd,UnrealIRCd,2026-11-16,Internet,High,https://nvd.nist.gov/vuln/detail/CVE-2026-114713
+P0,CVE-2026-123039,example-app-02.example.test,True,,8.2,Check Point,Multiple Products,2026-11-16,Internal,High,https://nvd.nist.gov/vuln/detail/CVE-2026-123039
+P1,CVE-2026-124194,example-user-03.example.test,True,,7.4,Microsoft,Office,2026-11-24,Internal,Low,https://nvd.nist.gov/vuln/detail/CVE-2026-124194

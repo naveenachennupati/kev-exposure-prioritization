@@ -1,0 +1,159 @@
+{
+  "as_of": "2026-11-16",
+  "mode": "public_kev_watchlist",
+  "catalog_version": "2026.11.13",
+  "kev_source_scope": "selected_official_excerpt_positive_matches_only",
+  "catalog_release": "2026-11-13T20:24:18.3008Z",
+  "cve_records_in_source": 7,
+  "total_rows": 7,
+  "priorities": {
+    "P1": 7
+  },
+  "kev_matches": 7,
+  "epss_enriched": 0,
+  "items": [
+    {
+      "cve": "CVE-2026-111560",
+      "asset": "",
+      "cvss": null,
+      "exposure": "Unknown",
+      "criticality": "Unknown",
+      "scanner": "CISA KEV watchlist",
+      "known_exploited": true,
+      "date_added": "2026-11-10",
+      "due_date": "2026-11-13",
+      "vendor": "Barracuda Networks",
+      "product": "Multiple Products",
+      "epss": null,
+      "epss_percentile": null,
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111560",
+      "priority": "P1",
+      "priority_factors": [
+        "CISA KEV: observed exploitation in the wild",
+        "CISA federal remediation due date has passed (not an enterprise SLA)"
+      ]
+    },
+    {
+      "cve": "CVE-2026-111793",
+      "asset": "",
+      "cvss": null,
+      "exposure": "Unknown",
+      "criticality": "Unknown",
+      "scanner": "CISA KEV watchlist",
+      "known_exploited": true,
+      "date_added": "2026-11-10",
+      "due_date": "2026-11-24",
+      "vendor": "Openwave Messaging Limited",
+      "product": "Webtop Media Transcoder",
+      "epss": null,
+      "epss_percentile": null,
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111793",
+      "priority": "P1",
+      "priority_factors": [
+        "CISA KEV: observed exploitation in the wild"
+      ]
+    },
+    {
+      "cve": "CVE-2026-114713",
+      "asset": "",
+      "cvss": null,
+      "exposure": "Unknown",
+      "criticality": "Unknown",
+      "scanner": "CISA KEV watchlist",
+      "known_exploited": true,
+      "date_added": "2026-11-13",
+      "due_date": "2026-11-16",
+      "vendor": "UnrealIRCd",
+      "product": "UnrealIRCd",
+      "epss": null,
+      "epss_percentile": null,
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713",
+      "priority": "P1",
+      "priority_factors": [
+        "CISA KEV: observed exploitation in the wild"
+      ]
+    },
+    {
+      "cve": "CVE-2026-116606",
+      "asset": "",
+      "cvss": null,
+      "exposure": "Unknown",
+      "criticality": "Unknown",
+      "scanner": "CISA KEV watchlist",
+      "known_exploited": true,
+      "date_added": "2026-11-10",
+      "due_date": "2026-11-13",
+      "vendor": "Barracuda Networks",
+      "product": "Barracuda Email Security Gateway (ESG)",
+      "epss": null,
+      "epss_percentile": null,
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116606",
+      "priority": "P1",
+      "priority_factors": [
+        "CISA KEV: observed exploitation in the wild",
+        "CISA federal remediation due date has passed (not an enterprise SLA)"
+      ]
+    },
+    {
+      "cve": "CVE-2026-123039",
+      "asset": "",
+      "cvss": null,
+      "exposure": "Unknown",
+      "criticality": "Unknown",
+      "scanner": "CISA KEV watchlist",
+      "known_exploited": true,
+      "date_added": "2026-11-13",
+      "due_date": "2026-11-16",
+      "vendor": "Check Point",
+      "product": "Multiple Products",
+      "epss": null,
+      "epss_percentile": null,
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123039",
+      "priority": "P1",
+      "priority_factors": [
+        "CISA KEV: observed exploitation in the wild"
+      ]
+    },
+    {
+      "cve": "CVE-2026-124194",
+      "asset": "",
+      "cvss": null,
+      "exposure": "Unknown",
+      "criticality": "Unknown",
+      "scanner": "CISA KEV watchlist",
+      "known_exploited": true,
+      "date_added": "2026-11-10",
+      "due_date": "2026-11-24",
+      "vendor": "Microsoft",
+      "product": "Office",
+      "epss": null,
+      "epss_percentile": null,
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124194",
+      "priority": "P1",
+      "priority_factors": [
+        "CISA KEV: observed exploitation in the wild"
+      ]
+    },
+    {
+      "cve": "CVE-2026-20320",
+      "asset": "",
+      "cvss": null,
+      "exposure": "Unknown",
+      "criticality": "Unknown",
+      "scanner": "CISA KEV watchlist",
+      "known_exploited": true,
+      "date_added": "2026-11-10",
+      "due_date": "2026-11-24",
+      "vendor": "Cisco",
+      "product": "BroadWorks",
+      "epss": null,
+      "epss_percentile": null,
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20320",
+      "priority": "P1",
+      "priority_factors": [
+        "CISA KEV: observed exploitation in the wild"
+      ]
+    }
+  ],
+  "interpretation": "CISA catalog intelligence only; no organization assets or exposures were assessed. Source is a selected KEV excerpt: unlisted CVEs have UNKNOWN KEV status until a full catalog is provided."
+}

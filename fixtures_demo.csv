@@ -1,0 +1,4 @@
+Asset,CVE,CVSS,Exposure,Business Criticality
+example-web-01.example.test,CVE-2026-114713,9.0,Internet,High
+example-app-02.example.test,CVE-2026-123039,8.2,Internal,High
+example-user-03.example.test,CVE-2026-124194,7.4,Internal,Low

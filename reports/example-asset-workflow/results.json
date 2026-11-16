@@ -1,0 +1,82 @@
+{
+  "as_of": "2026-11-16",
+  "mode": "asset_exposure_queue",
+  "catalog_version": "2026.11.13",
+  "kev_source_scope": "selected_official_excerpt_positive_matches_only",
+  "catalog_release": "2026-11-13T20:24:18.3008Z",
+  "cve_records_in_source": 7,
+  "total_rows": 3,
+  "priorities": {
+    "P0": 2,
+    "P1": 1
+  },
+  "kev_matches": 3,
+  "epss_enriched": 0,
+  "items": [
+    {
+      "cve": "CVE-2026-114713",
+      "asset": "example-web-01.example.test",
+      "cvss": 9.0,
+      "exposure": "Internet",
+      "criticality": "High",
+      "scanner": "Qualys-style CSV",
+      "known_exploited": true,
+      "date_added": "2026-11-13",
+      "due_date": "2026-11-16",
+      "vendor": "UnrealIRCd",
+      "product": "UnrealIRCd",
+      "epss": null,
+      "epss_percentile": null,
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713",
+      "priority": "P0",
+      "priority_factors": [
+        "CISA KEV: observed exploitation in the wild",
+        "CVSS >= 9.0",
+        "Asset reported as internet exposed",
+        "Asset reported as business critical"
+      ]
+    },
+    {
+      "cve": "CVE-2026-123039",
+      "asset": "example-app-02.example.test",
+      "cvss": 8.2,
+      "exposure": "Internal",
+      "criticality": "High",
+      "scanner": "Qualys-style CSV",
+      "known_exploited": true,
+      "date_added": "2026-11-13",
+      "due_date": "2026-11-16",
+      "vendor": "Check Point",
+      "product": "Multiple Products",
+      "epss": null,
+      "epss_percentile": null,
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123039",
+      "priority": "P0",
+      "priority_factors": [
+        "CISA KEV: observed exploitation in the wild",
+        "Asset reported as business critical"
+      ]
+    },
+    {
+      "cve": "CVE-2026-124194",
+      "asset": "example-user-03.example.test",
+      "cvss": 7.4,
+      "exposure": "Internal",
+      "criticality": "Low",
+      "scanner": "Qualys-style CSV",
+      "known_exploited": true,
+      "date_added": "2026-11-10",
+      "due_date": "2026-11-24",
+      "vendor": "Microsoft",
+      "product": "Office",
+      "epss": null,
+      "epss_percentile": null,
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124194",
+      "priority": "P1",
+      "priority_factors": [
+        "CISA KEV: observed exploitation in the wild"
+      ]
+    }
+  ],
+  "interpretation": "Asset exposure requires validation against the asset inventory; findings do not establish exploitability. Source is a selected KEV excerpt: unlisted CVEs have UNKNOWN KEV status until a full catalog is provided."
+}

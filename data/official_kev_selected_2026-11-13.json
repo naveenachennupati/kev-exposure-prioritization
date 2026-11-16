@@ -1,0 +1,80 @@
+{
+  "title": "Selected documented entries from official CISA KEV catalog; NOT full catalog",
+  "catalogVersion": "2026.11.13",
+  "dateReleased": "2026-11-13T20:24:18.3008Z",
+  "count": 7,
+  "excerpt": true,
+  "source_url": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json",
+  "vulnerabilities": [
+    {
+      "cveID": "CVE-2026-114713",
+      "vendorProject": "UnrealIRCd",
+      "product": "UnrealIRCd",
+      "vulnerabilityName": "UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
+      "dateAdded": "2026-11-13",
+      "dueDate": "2026-11-16",
+      "knownRansomwareCampaignUse": "Unknown",
+      "forensicTriage": "Yes"
+    },
+    {
+      "cveID": "CVE-2026-123039",
+      "vendorProject": "Check Point",
+      "product": "Multiple Products",
+      "vulnerabilityName": "Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability",
+      "dateAdded": "2026-11-13",
+      "dueDate": "2026-11-16",
+      "knownRansomwareCampaignUse": "Unknown",
+      "forensicTriage": "Yes"
+    },
+    {
+      "cveID": "CVE-2026-124194",
+      "vendorProject": "Microsoft",
+      "product": "Office",
+      "vulnerabilityName": "Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability",
+      "dateAdded": "2026-11-10",
+      "dueDate": "2026-11-24",
+      "knownRansomwareCampaignUse": "Unknown",
+      "forensicTriage": "No"
+    },
+    {
+      "cveID": "CVE-2026-111793",
+      "vendorProject": "Openwave Messaging Limited",
+      "product": "Webtop Media Transcoder",
+      "vulnerabilityName": "Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
+      "dateAdded": "2026-11-10",
+      "dueDate": "2026-11-24",
+      "knownRansomwareCampaignUse": "Unknown",
+      "forensicTriage": "No"
+    },
+    {
+      "cveID": "CVE-2026-20320",
+      "vendorProject": "Cisco",
+      "product": "BroadWorks",
+      "vulnerabilityName": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
+      "dateAdded": "2026-11-10",
+      "dueDate": "2026-11-24",
+      "knownRansomwareCampaignUse": "Unknown",
+      "forensicTriage": "No"
+    },
+    {
+      "cveID": "CVE-2026-111560",
+      "vendorProject": "Barracuda Networks",
+      "product": "Multiple Products",
+      "vulnerabilityName": "Barracuda Networks Multiple Products OS Command Injection Vulnerability",
+      "dateAdded": "2026-11-10",
+      "dueDate": "2026-11-13",
+      "knownRansomwareCampaignUse": "Unknown",
+      "forensicTriage": "Yes"
+    },
+    {
+      "cveID": "CVE-2026-116606",
+      "vendorProject": "Barracuda Networks",
+      "product": "Barracuda Email Security Gateway (ESG)",
+      "vulnerabilityName": "Barracuda Networks Email Security Gateway Authentication Bypass Vulnerability",
+      "dateAdded": "2026-11-10",
+      "dueDate": "2026-11-13",
+      "knownRansomwareCampaignUse": "Unknown",
+      "forensicTriage": "Yes"
+    }
+  ]
+}
